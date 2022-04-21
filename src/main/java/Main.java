@@ -3,7 +3,7 @@ import java.text.NumberFormat;
 import java.util.Scanner;
 
 public class Main {
-    public static main void(String[] args) {
+    public static void main(String[] args) {
 
         final byte Percent = 100;
         final byte MonthsInAYear = 12;
