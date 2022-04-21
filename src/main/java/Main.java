@@ -10,10 +10,10 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
         //
-        System.out.println("Principal: ");
+        System.out.print("Principal: ");
         int principal = scanner.nextInt();
 
-        System.out.println("Period (Years): ");
+        System.out.print("Period (Years): ");
         byte periodYears = scanner.nextByte();
         float numberOfMonthlyPayments = periodYears * MonthsInAYear;
 
@@ -24,7 +24,7 @@ public class Main {
         double mortgage = principal * (monthlyInterestRate * Math.pow(1 + monthlyInterestRate, numberOfMonthlyPayments)) / (Math.pow(1 + monthlyInterestRate, numberOfMonthlyPayments) - 1);
 
         String mortgageFormatted = NumberFormat.getCurrencyInstance().format(mortgage);
-        System.out.println("Mortgage: " + mortgageFormatted);
+        System.out.print("Mortgage: " + mortgageFormatted);
 
 
 
